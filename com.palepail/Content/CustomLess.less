@@ -4,10 +4,15 @@
          -moz-transition: opacity .4s;
            -o-transition: opacity .4s;
               transition: opacity .4s;
+
+}
+.carousel{
+    width:450px;
 }
 .carousel-control {
     background-image: none !important; /* remove background gradients on controls */
 }
+
 /* Fade controls with items */
 .next.left,
 .prev.right {
@@ -19,6 +24,16 @@
     opacity: 0;
     z-index: 2;
 }
+.content{
+    float:right;
+    width:450px;
+    height:450px;
+    overflow:scroll auto;
+    margin-top:-450px;
+}
+.title{
+    float:left;
+}
 
 .nav{
     float:right;
@@ -26,4 +41,8 @@
 
 .jumbotron{
     margin-top:40px;
+}
+
+body{
+   background: #F5F5F5 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFXRFWHRDcmVhdGlvbiBUaW1lAAfbBhwTDDqAejMsAAAAB3RJTUUH3AMWCxcp0J73fAAAAAlwSFlzAAAOdAAADnQBaySz1gAAABxJREFUeNpj/PLxFwNuwALEbJw4pZkY8IJhKw0AlAcDBIeyUC8AAAAASUVORK5CYII=') /*../images/pattern.png*/;
 }

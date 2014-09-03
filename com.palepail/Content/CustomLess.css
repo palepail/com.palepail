@@ -1,4 +1,7 @@
-﻿.carousel .item {
+﻿.carousel {
+  width: 450px;
+}
+.carousel .item {
   left: 0 !important;
   -webkit-transition: opacity .4s;
   /*adjust timing here */
@@ -24,7 +27,15 @@
 .nav {
   float: right;
 }
-.jumbotron {
-  margin-top: 40px;
+body {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFXRFWHRDcmVhdGlvbiBUaW1lAAfbBhwTDDqAejMsAAAAB3RJTUUH3AMWCxcp0J73fAAAAAlwSFlzAAAOdAAADnQBaySz1gAAABxJREFUeNpj/PLxFwNuwALEbJw4pZkY8IJhKw0AlAcDBIeyUC8AAAAASUVORK5CYII=');
+}
+.content {
+  float: right;
+  margin-top: -450px;
+  width: 450px;
+}
+footer {
+  text-align: center;
 }
 /*# sourceMappingURL=CustomLess.css.map */

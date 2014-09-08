@@ -1,5 +1,13 @@
-﻿.carousel {
-  width: 450px;
+﻿#title {
+  padding-left: 1.5em;
+  font-size: 32px;
+}
+#title-right {
+  margin-left: -0.3em;
+}
+#carousel-slide {
+  max-width: 450px;
+  float: left;
 }
 .carousel .item {
   left: 0 !important;
@@ -27,13 +35,20 @@
 .nav {
   float: right;
 }
+.navbar-default {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFXRFWHRDcmVhdGlvbiBUaW1lAAfbBhwTDDqAejMsAAAAB3RJTUUH3AMWCxcp0J73fAAAAAlwSFlzAAAOdAAADnQBaySz1gAAABxJREFUeNpj/PLxFwNuwALEbJw4pZkY8IJhKw0AlAcDBIeyUC8AAAAASUVORK5CYII=');
+}
+.jumbotron {
+  min-height: 540px;
+}
 body {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFXRFWHRDcmVhdGlvbiBUaW1lAAfbBhwTDDqAejMsAAAAB3RJTUUH3AMWCxcp0J73fAAAAAlwSFlzAAAOdAAADnQBaySz1gAAABxJREFUeNpj/PLxFwNuwALEbJw4pZkY8IJhKw0AlAcDBIeyUC8AAAAASUVORK5CYII=');
 }
-.content {
+.right-content {
   float: right;
-  margin-top: -450px;
-  width: 450px;
+  max-width: 450px;
+  margin-right: 45px;
+  margin-bottom: 45px;
 }
 footer {
   text-align: center;

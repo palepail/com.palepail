@@ -10,28 +10,51 @@
 
 </head>
 <body>
-    <div class="navbar navbar navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+            <div id="title" class="title navbar-brand">
+                pale
+                @Html.ActionLink("pail", "Index", "Home", new { area = "" }, new { @id = "title-right" })
+            </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
             </div>
             <div class="navbar-collapse collapse">
+                @Html.Partial("_LoginPartial")
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="jumbotron">
+            <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="~/images/pail0.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="~/images/pail6.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="~/images/pail7.jpg" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                @RenderBody()
+            </div>
+
+        </div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - palepail.com</p>
@@ -39,7 +62,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/angular.min.js")
+    @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

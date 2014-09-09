@@ -179,7 +179,7 @@
     </Content>
     <Content Include="Images\pail6.jpg" />
     <Content Include="Images\pail7.jpg" />
-    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Angular\angular.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -188,12 +188,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\pail0.jpg" />
     <Content Include="Images\pattern.png" />
+    <Content Include="Scripts\Angular\HomeModule\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\CustomLess.less" />
     <Content Include="Content\CustomLess.css.map">
       <DependentUpon>CustomLess.css</DependentUpon>
     </Content>
+    <Content Include="Content\NewsCycle-Regular.eot" />
+    <Content Include="Content\NewsCycle-Regular.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

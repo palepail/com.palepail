@@ -16,7 +16,7 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li ng-class="{active:tab.tab===4}"><a href="#!/register" ng-click="tab.setTab(4)">Register</a></li>
+        <li ng-class="{active:tab.tab===5}"><a href="#!/login" ng-click="tab.setTab(5)">Log in</a></li>
     </ul>
 }

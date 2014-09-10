@@ -14,7 +14,8 @@
         <div class="container">
             <div id="title" class="title navbar-brand">
                 pale
-                @Html.ActionLink("pail", "Index", "Home", new { area = "" }, new { @id = "title-right" })
+             
+                <a id="title-right" href="#!/home" ng-click="tab.setTab(1)">pail</a>
             </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

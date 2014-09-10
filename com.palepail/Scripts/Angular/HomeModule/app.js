@@ -5,7 +5,9 @@
         $routeProvider
           .when("/", { templateUrl: "/Home/Home" })
           .when("/contact", { templateUrl: "/Home/Contact" })
-            .when("/about", { templateUrl: "/Home/About" })
+          .when("/about", { templateUrl: "/Home/About" })
+          .when("/register", { templateUrl: "/Account/Register" })
+          .when("/login", { templateUrl: "/Account/Login" })
           .otherwise({ redirectTo: "/" });
         $locationProvider.html5Mode(false).hashPrefix("!");
     }]);
@@ -15,15 +17,15 @@
 
     });
     app.controller('TabController', function () {
-     this.tab = 1;
+        this.tab = 1;
 
-     this.setTab = function (tab) {
-         this.tab = tab;
-     };
+        this.setTab = function (tab) {
+            this.tab = tab;
+        };
 
-     this.isSet = function(checkTab) {
-         return this.tab===checkTab;
-     };
+        this.isSet = function (checkTab) {
+            return this.tab === checkTab;
+        };
 
     });
 

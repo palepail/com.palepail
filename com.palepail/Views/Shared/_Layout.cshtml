@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="home">
+<html ng-app="app">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +27,9 @@
             <div class="navbar-collapse collapse">
                 @Html.Partial("_LoginPartial")
                 <ul class="nav navbar-nav">
-                    <li ng-class="{active:tab.tab===1}"><a href="" ng-click="tab.setTab(1)">Home</a></li>
-                    <li ng-class="{active:tab.tab===2}"><a href="" ng-click="tab.setTab(2)">About</a></li>
-                    <li ng-class="{active:tab.tab===3}"><a href="" ng-click="tab.setTab(3)">Contact</a></li>
+                    <li ng-class="{active:tab.tab===1}"><a href="#!/home" ng-click="tab.setTab(1)">Home</a></li>
+                    <li ng-class="{active:tab.tab===2}"><a href="#!/about" ng-click="tab.setTab(2)">About</a></li>
+                    <li ng-class="{active:tab.tab===3}"><a href="#!/contact" ng-click="tab.setTab(3)">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right-content">
+            <div class="right-content" data-ng-view>
                 @RenderBody()
             </div>
 

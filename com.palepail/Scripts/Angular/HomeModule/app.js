@@ -1,7 +1,16 @@
 ﻿(function () {
-    var app = angular.module('home', []);
+    var app = angular.module('app', ['ngRoute']);
 
-    app.controller('HomeController', function () {
+    app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+        $routeProvider
+          .when("/", { templateUrl: "/Home/Home" })
+          .when("/contact", { templateUrl: "/Home/Contact" })
+            .when("/about", { templateUrl: "/Home/About" })
+          .otherwise({ redirectTo: "/" });
+        $locationProvider.html5Mode(false).hashPrefix("!");
+    }]);
+
+    app.controller('AppController', function () {
 
 
     });

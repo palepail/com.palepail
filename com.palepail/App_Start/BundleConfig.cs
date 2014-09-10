@@ -31,6 +31,7 @@ namespace com.palepail
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                        "~/Scripts/Angular/angular.min.js",
+                       "~/Scripts/Angular/angular-route.min.js",
                        "~/Scripts/Angular/HomeModule/app.js"));
 
             // Set EnableOptimizations to false for debugging. For more information,
